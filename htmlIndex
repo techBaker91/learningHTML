@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!--The head element is a container for the following elements: title, style, meta, link, script, and base-->
+<!--Define the character set used-->
+<meta charset="UTF-8">
+<!--Define keywords for search engines-->
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<!--Define a description of your web page-->
+<meta name="description" content="HTML practice">
+<!--Define the author of a page-->
+<meta name="author" content="BAKER">
+<!--Refresh document every 30 seconds-->
+<meta http-equiv="refresh" content="30">
+<!--Setting the viewport to make your website look good on all devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice Page</title>
+<!-- Below is an example of Internal CSS
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: chocolate;}
+</style>
+The same changes above will be done with linked External CSS -->
+<style>
+    table {
+        border-spacing: 8px;
+    }
+    th, td {
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+
+    #li {
+        width:20%;
+        display:inline-block;
+        background-color: tomato;
+        padding: 20px;
+    }
+/* need to figure out how to make this css work in its stand alone file */
+    nav {
+    padding: 25px;
+    margin: 5px;
+    background-color: #2f4f4f;
+    }
+    a {
+    color: white;
+    background-color: #1e90ff;
+    padding: 10px;
+    margin: 5px;
+    }
+
+    /*CSS for drag and drop*/
+#div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+  }
+</style>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<script src="script.js"></script>
+
+<h1 style="text-align:center;">HTML Heading Centered With Inline CSS</h1>
+<p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip</p>
+
+<a href="#links">Jump to links using this bookmark</a>
+
+<h2 style="font-size:40px;">Font size adjusted with inline CSS styling</h2>
+
+<p>Line 1 and Line 2 seperated by the horizontal rule tage</p>
+<hr>
+<p>Line 2</p>
+
+<p>This paragraph 
+    has multiple
+    lines inside
+    the code.
+</p>
+
+<pre>This paragraph 
+    has multiple
+    lines inside
+    the code but 
+    uses the "pre" tag.
+</pre>
+
+<h2>HTML Formatting Elements</h2>
+
+<p>Formatting elements were designed to display special types of text:</p>
+
+<b> - Bold text</b><br>
+<strong> - Important text</strong><br>
+<i> - Italic text</i><br>
+<em> - Emphasized text</em><br>
+<mark> - Marked text</mark><br>
+<small> - Smaller text</small><br>
+<del> - Deleted text</del><br>
+<ins> - Inserted text</ins><br>
+<sub> - Subscript text</sub><br>
+<sup> - Superscript text</sup><br><br>
+
+<p>The paragraph below uses the abbr tag</p>
+<p>The acronym <abbr title="Bring Your Own Beverage">BYOB</abbr> stands for bring your own beverage.</p>
+
+<p>Below uses the address tag</p>
+<address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA 
+</address>
+
+<p>Below uses the Bi-Directional Override tage typed: bdo</p>
+<bdo dir="rtl">Defines the text direction</bdo>
+
+<p>The blockquote tag is used for larger content being quoted.</p>
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">For 60 years, WWF has worked to help people and nature thrive. 
+    As the world's leading conservation organization, WWF works in nearly 100 countries. 
+    At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, 
+    wildlife, and the places in which they live.
+</blockquote>
+
+<p>The cite tag is used to define the title of a creative work(book, poem, song, movie, painting, sculpture, etc.)</p>
+<p><cite>The Scream</cite> by Edvard Mucnh. Painted in 1893.</p>
+<img src="sharedImages/img_the_scream.jpg" width="220" height="277" alt="The Scream">
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q>
+    
+<!-- This is an HTML multiline comment. Can be used to comment out code.-->
+
+<!--Inline CSS styling is used to change a single HTML element.
+<h1 style="color:blue;">A Blue Heading</h1>
+
+<p style="color:red;">A red paragraph.</p> 
+-->
+
+<h2>Various link examples using the a tag.</h2>
+<p>If target="_blank", the link will open in a new browser window or tab.</p>
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools</a>
+
+<h3 title="These Links Open In Same Window">Absolute URLs(check my tooltip)</h3>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h3 title="These links dont work but demonstrate the file path">Relative URLs(check my tooltip)</h3>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p> 
+
+<p>Link to an email address</p>
+<a href="mailto:bakerandrew88@yahoo.com">Email Baker</a>
+
+<p>Below is an example of a bookmark. In a long web page book marks are used to scroll up or down to a specific area on the page</p>
+<h3 id="links">You were brought here with a bookmark</h3>
+
+<p>HTML allows moving images:</p>
+<img src="sharedImages/programming.gif" alt="Computer Man" style="width:150px;height:150px;">
+
+<h2>Images</h2>
+
+<p>To use and IMG as a link, put the img tag inside the a tag.</p>
+
+<p>
+    <img src="sharedImages/smiley.gif" alt="Smiley Face" style="float:right;width:42px;height:42px;">
+    A paragraph with a smiley face image floated to the left and right side using the float attribute in the img tag.
+    <img src="sharedImages/smiley.gif" alt="Smiley Face" style="float:left;width:42px;height:42px;">
+</p><br><br>
+
+<p style="background-image: url('sharedImages/granite.jpg'); font-size:32px";>This paragraph has a background image.
+    It's font-size is also increased with inline styling.<br> 
+    The image below uses a image map to perform different actions based on where you click. 
+    You can link to a differnet page within your website, an external webpage, 
+    or you can add a click event to the area element to execute a JavaScript function. 
+    Try clicking on the computer, phone, and coffee to see how each reacts in the img below.</p>
+<img src="sharedImages/workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.dell.com" onclick="myFunction0()">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.samsung.com" onclick="myFunction1()">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.starbucks.com" onclick="myFunction2()">
+</map> 
+
+<p>The href attribute is required for the map to work</p>
+
+<!--
+Moved to stand alone script.js file. Left here to be an example of change.
+<script>
+    function myFunction0() {
+        alert("You clicked the computer!")
+    }
+    function myFunction1() {
+        alert("You clicked the phone!")
+    }
+    function myFunction2() {
+        alert("You clicked the coffee!")
+    }
+</script>
+-->
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="sharedImages/img_food.jpg">
+  <source media="(min-width: 465px)" srcset="sharedImages/img_car.jpg">
+  <img src="sharedImages/img_girl.jpg" style="width:auto;">
+</picture>
+
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+The browser looks for the first source element where the media query matches the user's current viewport width,
+and fetches the image specified in the srcset attribute.</p>
+
+<p>The img element is required as the last child tag of the picture declaration block.
+The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+</p>
+
+<table style="width:100%">
+    <caption>(this is a caption)</caption>
+    <tr>
+        <th colspan="5"><span style="color:blue">Epic Cars</span></th>
+    </tr>
+    <tr>
+        <th>McLaren</th>
+        <th>Ferrari</th>
+        <th>Koeniggsegg</th>
+        <th>Porsche</th>
+        <th>Nissan</th>
+    </tr>
+    <tr>
+        <td>765LT</td>
+        <td>F40</td>
+        <td>One:1</td>
+        <td>GT3 RS</td>
+        <td>R33 GTR</td>
+    </tr>
+    <tr>
+        <td>570s</td>
+        <td>599 GTO</td>
+        <td>Jesko</td>
+        <td>911</td>
+        <td>GT-R 35</td>
+    </tr>
+    <tr>
+        <td>F1</td>
+        <td>488 GTB</td>
+        <td>Agera</td>
+        <td>Carrera GT</td>
+        <td>370z</td>
+    </tr>
+</table>
+
+<h2>Lists displayed in 4 seperate inline div elements.</h2>
+
+<div style="background-color:black;color:white;padding:20px;">
+
+    <div id="li">
+        <h3>Unordered List</h3>
+
+        <ul style="list-style-type:circle;">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul><br>
+
+        <hr>
+    </div>
+
+    <div id="li">
+        <h3>Ordered List</h3>
+
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol><br>
+
+        <ol type="A"><!--type can have 1, A, a, I, i, which is numbers, 
+            capital letters, lowercase, uppercase roman numerals, and lower case respectively-->
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol><br> 
+
+        <hr>
+    </div>
+
+    <div id="li">
+        <h3>A Description List</h3>
+
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl><br>
+
+        <hr>
+    </div>
+
+    <div id="li">
+        <h3>Nested HTML Lists</h3>
+
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+            </li>
+            <li>Milk</li>
+        </ul><br>
+
+        <ol>
+            <li>Coffee</li>
+            <li>Tea
+            <ol type="A">
+                <li>Black tea</li>
+                <li>Green tea</li>
+                    <ul style="list-style-type:circle;">
+                    <li>More tea</li>
+                </ul>
+            </ol>
+            </li>
+            <li>Milk</li>
+        </ol><br>
+
+        <hr>
+    </div>
+</div>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h2 id="myHeader">Hello World!</h2>
+<button onclick="displayResult()">Change Text</button><br><br>
+
+<nav id="nav">
+    <a href="/html/">HTML</a>
+    <a href="/css/">CSS</a>
+    <a href="/js/">JavaScript</a>
+    <a href="/jquery/">MySql</a>
+    <a href="/sql/">SQL</a>
+    <a href="/node/">Node.JS</a>
+  </nav>
+
+<br><br>
+
+<h4>Sized Emojis</h4>
+
+<p style="font-size:48px">
+&#128512; &#128516; &#128525; &#128151;
+</p>
+
+<h2>Forms, Inputs, Labels, Types, etc.</h2>
+
+<p>Choose your favorite web language by using the radio type:</p>
+<!-- The form handler is typically a file on the server with a script for processing input data -->
+<form action="/action_page.php"> <!-- the form handler is specified by the action attribute -->
+    <input type="radio" id="html"   name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS"><!-- Must have name attribute -->
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label><br><br>
+    <input type="submit" value="Submit">
+</form><br>
+
+<p>Choose an option using the checkbox type:</p>
+
+<form>
+  <fieldset><!-- the fieldset element is used to group related data in a form -->
+    <legend>Transportation</legend><!-- the legend element defines a caption for the fieldset element-->
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </fieldset>  
+</form> 
+
+<p>The select element defines a drop-down list:</p>
+
+<form action="/action_page.php" method="post"><!-- the send method used is POST as opposed to GET-->
+    <label for="cars">Choose a car:</label>
+    <!-- the size attribute specifies the number of visable values -->
+    <select id="cars" name="cars" size="5">
+        <option value="mclaren">McLaren</option>
+        <option value="koeniggsegg">Koeniggsegg</option>
+        <option value="ferrari" selected>Ferrari</option>
+        <!-- the selected attribute specifies what is automatically chosen before user input-->
+        <option value="lamborghini">Lamborghini</option>
+        <option value="aston martin">Aston Martin</option>
+    </select>
+    <input type="submit" value="Send It">
+</form>
+
+<p>The textarea element uses the rows and cols attribute to specify width and height, can also use CSS.</p>
+
+<textarea name="message" rows="10" cols="30">
+    Predefined text if necessary
+</textarea>
+
+<h2>The datalist elemnent</h2>
+
+<p>The datalist lement specifies a list of pre-defined options for an input element.</p>
+
+<p>Enter your favorite internet browser</p>
+
+<form action="'action_page.php">
+    <input list="browsers" name="browser" autofocus>
+    <!--autofocus specifies field that should automatically get focus when the page loads.-->
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+</form>
+
+<h3>Other random input types</h3>
+
+<p>The <strong>input type="color"</strong> is used for input fields that should contain a color.</p>
+<form>
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br>
+    <p>Show a file-select field which allows a file to be chosen for upload:</p>
+    <labe for="myfile">Select a file:</labe>
+    <input type="file" id="myfile" name="myfile"><br>
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+    <label for="quantity">Quantity in steps of 10:</label>
+    <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30"><br>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" size="50" placeholder="baker duh"><br>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" size="4"><br>
+    <label for ="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br>
+    <label for="birthdaytime">Birthday (date and time):</label>
+    <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+    <label for="textField">Text</label>
+    <input type="text" id="textField" name="textfield" automcomplete="off"><br>
+    <!-- autocomplet works with form and the following input types: text, search, url, tel, email, password, datepickers, range, and color. -->
+    <input type="image" src="sharedImages/img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+
+<h4>The output element</h4>
+<p>The output element represents the result of a calculation.</p>
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+</form>
+
+<h3>SVG graphics in HTML using svg tag</h3>
+
+<svg width="300" height="200">
+    <polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+</svg>
+
+<svg height="130" width="500">
+    <defs>
+      <linearGradient id="grad1">
+        <stop offset="0%" stop-color="yellow" />
+        <stop offset="100%" stop-color="red" />
+      </linearGradient>
+    </defs>
+    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+    <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+    Sorry, your browser does not support inline SVG.
+  </svg><br><br>
+
+  <div style="text-align:center"> 
+    <p>Video player with JavaScript controls.</p>
+    <button onclick="playPause()">Play/Pause</button> 
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br><br>
+    <video id="video1" width="420">
+      <source src="sharedImages/mov_bbb.mp4" type="video/mp4">
+      <source src="sharedImages/mov_bbb.ogg" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+  </div><br><br>
+
+  <p>Drag the IMG into the rectangle.</p>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <br>
+  <img id="drag1" src="sharedImages/img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+</body>
+</html>
